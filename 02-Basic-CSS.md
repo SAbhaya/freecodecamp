@@ -169,5 +169,15 @@ To apply multiple classes
 ```html
 <img class="class1 class2">
 ```
+### Add Rounded Corners with border-radius
 
+We can round out border corners with a CSS property called `border-radius`
 
+```css
+.thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 10px;
+  }
+ ```
