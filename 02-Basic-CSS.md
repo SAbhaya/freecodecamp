@@ -181,3 +181,55 @@ We can round out border corners with a CSS property called `border-radius`
     border-radius: 10px;
   }
  ```
+ 
+### Make Circular Images with a border-radius
+
+In addition to pixels, we can also specify the border-radius using a percentage.
+
+```css
+.thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+ ```
+ 
+ Your image should have a border radius of **50%**, making it perfectly **circular.**
+
+### Give a Background Color to a div Element
+
+We can set an element's background color with the `background-color` property.
+
+For example, if you wanted an element's background color to be green, you'd put this within your style element:
+
+```css
+.green-background {
+  background-color: green;
+}
+```
+### Set the id of an Element
+
+In addition to classes, each HTML element can also have an `id` attribute.
+
+There are several benefits to using id attributes: You can use an `id` to style a single element and later you'll learn that you can use them to select and modify specific elements with JavaScript.
+
+`id` attributes should be **unique.** Browsers won't enforce this, but it is a widely agreed upon best practice. So please don't give more than one element the same `id` attribute.
+
+Here's an example of how you give your `h2` element the `id` of `cat-photo-app`:
+```css
+<h2 id="cat-photo-app">
+```
+
+To give form element the id cat-photo-form
+```css
+<form id="cat-photo-form" action="/submit-cat-photo">
+    <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+    ...
+    <button type="submit">Submit</button>
+</form>
+```
+
+### Use an id Attribute to Style an Element
+
+
