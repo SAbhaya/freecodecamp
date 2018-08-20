@@ -232,4 +232,19 @@ To give form element the id cat-photo-form
 
 ### Use an id Attribute to Style an Element
 
+* like classes, we can style them using CSS.
 
+* `id` is not reusable and should only be applied to one element. 
+* An `id` also has a **higher specificity** (importance) than a class.
+
+e.g.
+
+`id` attribute of `cat-photo-element` and give it the background color of green. In your style element
+
+```css
+#cat-photo-element {
+  background-color: green;
+}
+```
+
+### Adjust the Padding of an Element
