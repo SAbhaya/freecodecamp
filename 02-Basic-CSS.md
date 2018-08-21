@@ -412,6 +412,49 @@ padding-bottom
 padding-left
 ```
 
-freecode camp to be cont...
+Give the blue box a padding of 40px on its top and left side, 
+ but only 20px on its bottom and right side
+
+```css
+...
+
+ .blue-box {
+    background-color: blue;
+    color: #fff;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  }
+```
+### Add Different Margins to Each Side of an Element
+
+control the margin, adjust properties: 
+```css
+margin-top
+margin-right
+margin-bottom
+margin-left
+```
+
+Give the blue box a margin of 40px on its top and left side, 
+but only 20px on its bottom and right side.
+
+ .blue-box {
+    background-color: blue;
+    color: #fff;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+  }
+</style>
+
+
+
+
+
+
+
 
 
