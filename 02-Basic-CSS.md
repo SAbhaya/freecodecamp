@@ -92,7 +92,7 @@ Then can use in the `<style>` block
 </style>
 ```
 
-### Specify How Fonts Should Degrade
+#### Specify How Fonts Should Degrade
 
 If you wanted an element to use the Helvetica font, but degrade to the sans-serif font when Helvetica wasn't available, 
 you will specify it as follows:
