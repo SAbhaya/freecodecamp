@@ -440,6 +440,7 @@ margin-left
 Give the blue box a margin of 40px on its top and left side, 
 but only 20px on its bottom and right side.
 
+```css
  .blue-box {
     background-color: blue;
     color: #fff;
@@ -448,10 +449,7 @@ but only 20px on its bottom and right side.
     margin-bottom: 20px;
     margin-left: 40px;
   }
-</style>
-
-
-
+```
 
 
 
