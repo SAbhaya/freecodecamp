@@ -251,7 +251,7 @@ e.g.
 
 Three important properties control the space that surrounds each HTML element: `padding`, `margin`, and `border`.
 
-
+```html
 <style>
   .injected-text {
     margin-bottom: -25px;
@@ -288,6 +288,7 @@ Three important properties control the space that surrounds each HTML element: `
   <h5 class="box red-box">padding</h5>
   <h5 class="box blue-box">padding</h5>
 </div>
+```
 
 Change the padding of your blue box to match that of your red box.
 
@@ -313,7 +314,7 @@ Change the padding of your blue box to match that of your red box.
   ### Adjust the Margin of an Element
   
   An element's margin controls the amount of space between an element's border and surrounding elements.
-  
+```html  
 <style>
   .injected-text {
     margin-bottom: -25px;
@@ -352,7 +353,7 @@ Change the padding of your blue box to match that of your red box.
   <h5 class="box red-box">padding</h5>
   <h5 class="box blue-box">padding</h5>
 </div>
-
+```
 
 ### Add a Negative Margin to an Element
 
@@ -360,6 +361,7 @@ An element's margin controls the amount of space between an element's border and
 
 negative element margin --> the element will grow larger
 
+```html
 <style>
   .injected-text {
     margin-bottom: -25px;
@@ -397,6 +399,8 @@ negative element margin --> the element will grow larger
   <h5 class="box red-box">padding</h5>
   <h5 class="box blue-box">padding</h5>
 </div>
+
+```
 
 ### Add Different Padding to Each Side of an Element
 
