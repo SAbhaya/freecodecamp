@@ -469,3 +469,17 @@ like this:
 ```css
 margin: 10px 20px 10px 20px;
 ```
+
+### Use Attribute Selectors to Style Elements
+ We can use the `[attr=value]` attribute selector to style 
+
+```css 
+[type="checkbox"]{
+    margin-top:10px;
+    margin-bottom: 15px;
+
+  } 
+</style>
+
+```
+
