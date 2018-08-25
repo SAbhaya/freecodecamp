@@ -451,8 +451,21 @@ but only 20px on its bottom and right side.
   }
 ```
 
+### Clockwise Notation to Specify the Padding of an Element
 
+```css
+padding: 10px 20px 10px 20px;
+```
+These four values work like a clock: top, right, bottom, left, 
+and will produce the exact same result as using 
+the side-specific padding instructions.
 
+### Use Clockwise Notation to Specify the Margin of an Element
 
+Instead of specifying an element's `margin-top`, `margin-right`, `margin-bottom`, 
+and `margin-left` properties individually, we can specify them all in one line, 
+like this:
 
-
+```css
+margin: 10px 20px 10px 20px;
+```
