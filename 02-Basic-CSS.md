@@ -1,25 +1,4 @@
 
--   [Basic CSS](#basic-css)
-    -   [Style block](#style-block)
-    -   [CSS class declaration](#css-class-declaration)
-    -   [Fonts](#fonts)
-    -   [Size Your Images](#size-your-images)
-    -   [Add Borders Around Your Elements](#add-borders-around-your-elements)
-    -   [Add Rounded Corners with border-radius](#add-rounded-corners-with-border-radius)
-    -   [Make Circular Images with a border-radius](#make-circular-images-with-a-border-radius)
-    -   [Give a Background Color to a div Element](#give-a-background-color-to-a-div-element)
-    -   [Set the id of an Element](#set-the-id-of-an-element)
-    -   [Use an id Attribute to Style an Element](#use-an-id-attribute-to-style-an-element)
-    -   [Adjust the Padding of an Element](#adjust-the-padding-of-an-element)
-    -   [Add a Negative Margin to an Element](#add-a-negative-margin-to-an-element)
-    -   [Add Different Padding to Each Side of an Element](#add-different-padding-to-each-side-of-an-element)
-    -   [Add Different Margins to Each Side of an Element](#add-different-margins-to-each-side-of-an-element)
-    -   [Clockwise Notation to Specify the Padding of an Element](#clockwise-notation-to-specify-the-padding-of-an-element)
-    -   [Use Clockwise Notation to Specify the Margin of an Element](#use-clockwise-notation-to-specify-the-margin-of-an-element)
-    -   [Use Attribute Selectors to Style Elements](#use-attribute-selectors-to-style-elements)
-    -   [Understand Absolute versus Relative Units](#understand-absolute-versus-relative-units)
-    -   [Style the HTML Body Element](#style-the-html-body-element)
-
 Basic CSS
 =========
 
