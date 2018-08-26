@@ -1,86 +1,66 @@
+---
+output:
+  github_document:
+    toc: true
+---
 
--   [Basic CSS](#basic-css)
-    -   [Style block](#style-block)
-    -   [CSS class declaration](#css-class-declaration)
-    -   [Fonts](#fonts)
-    -   [Size Your Images](#size-your-images)
-    -   [Add Borders Around Your Elements](#add-borders-around-your-elements)
-    -   [Add Rounded Corners with border-radius](#add-rounded-corners-with-border-radius)
-    -   [Make Circular Images with a border-radius](#make-circular-images-with-a-border-radius)
-    -   [Give a Background Color to a div Element](#give-a-background-color-to-a-div-element)
-    -   [Set the id of an Element](#set-the-id-of-an-element)
-    -   [Use an id Attribute to Style an Element](#use-an-id-attribute-to-style-an-element)
-    -   [Adjust the Padding of an Element](#adjust-the-padding-of-an-element)
-    -   [Add a Negative Margin to an Element](#add-a-negative-margin-to-an-element)
-    -   [Add Different Padding to Each Side of an Element](#add-different-padding-to-each-side-of-an-element)
-    -   [Add Different Margins to Each Side of an Element](#add-different-margins-to-each-side-of-an-element)
-    -   [Clockwise Notation to Specify the Padding of an Element](#clockwise-notation-to-specify-the-padding-of-an-element)
-    -   [Use Clockwise Notation to Specify the Margin of an Element](#use-clockwise-notation-to-specify-the-margin-of-an-element)
-    -   [Use Attribute Selectors to Style Elements](#use-attribute-selectors-to-style-elements)
-    -   [Understand Absolute versus Relative Units](#understand-absolute-versus-relative-units)
-    -   [Style the HTML Body Element](#style-the-html-body-element)
 
-Basic CSS
-=========
+# Basic CSS
 
 Here's how you would set your h2 element's text color to blue:
-
-``` css
+```css
 <h2 style="color: blue;">CatPhotoApp</h2>
 ```
-
 Note that it is a good practice to end inline style declarations with a ;
 
 ### Style block
 
-``` css
+```css
 <style>
 </style>
 ```
 
-Inside that style block, you can create a CSS selector for all h2 elements. For example, if you wanted all h2 elements to be red, you would add a style rule that looks like this:
+Inside that style block, you can create a CSS selector for all h2 elements. 
+For example, if you wanted all h2 elements to be red, you would add a style rule that looks like this:
 
-``` css
+```css
 <style>
   h2 {color: red;}
 </style>
 ```
+Note that it's important to have both opening and closing curly braces ({ and }) around each element's style rule(s).
+You also need to make sure that your element's style definition is between the opening and closing style tags.
+Finally, be sure to add a semicolon to the end of each of your element's style rules.
 
-Note that it's important to have both opening and closing curly braces ({ and }) around each element's style rule(s). You also need to make sure that your element's style definition is between the opening and closing style tags. Finally, be sure to add a semicolon to the end of each of your element's style rules.
 
 ### CSS class declaration
 
 Here's an example CSS class declaration:
 
-``` css
+```css
 <style>
   .blue-text {
     color: blue;
   }
 </style>
 ```
-
 You can see that we've created a CSS class called blue-text within the `<style>` tag.
 
 You can apply a class to an HTML element like this:
-
-``` css
+```css
 <h2 class="blue-text">CatPhotoApp</h2>
 ```
-
 Note that in your CSS style element, class names start with a period. In your HTML elements' class attribute, the class name does not include the period.
 
 Classes allow you to use the same CSS styles on multiple HTML elements. You can see this by applying your red-text class to the first p element.
-
-``` css
+```css
 <style>
   .red-text {
     color: red;
   }
 </style>
 ```
-
-``` html
+```html
 <h2 class="red-text">CatPhotoApp</h2>
 <main>
   <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
@@ -89,8 +69,7 @@ Classes allow you to use the same CSS styles on multiple HTML elements. You can 
 ### Fonts
 
 Font size is controlled by the font-size CSS property, like this:
-
-``` css
+```css
 h1 {
   font-size: 30px;
 }
@@ -98,7 +77,7 @@ h1 {
 
 You can set which font an element should use, by using the font-family property.
 
-``` css
+```css
 h2 {
   font-family: sans-serif;
 }
@@ -108,13 +87,11 @@ h2 {
 
 import the Lobster font, need to include before the opening style element
 
-``` html
+```html
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 ```
-
 Then can use in the `<style>` block
-
-``` css
+```css
 <style>
   h2 {
     font-family: Lobster;
@@ -124,14 +101,14 @@ Then can use in the `<style>` block
 
 #### Specify How Fonts Should Degrade
 
-If you wanted an element to use the Helvetica font, but degrade to the sans-serif font when Helvetica wasn't available, you will specify it as follows:
+If you wanted an element to use the Helvetica font, but degrade to the sans-serif font when Helvetica wasn't available, 
+you will specify it as follows:
 
-``` css
+```css
 p {
   font-family: Helvetica, sans-serif;
 }
 ```
-
 Generic font family names are not case-sensitive. Also, they do not need quotes because they are CSS keywords.
 
 ### Size Your Images
@@ -140,17 +117,16 @@ CSS has a property called `width` that controls an element's width.
 
 class larger-iamge
 
-``` css
+```css
 <style>
   .larger-image {
     width: 500px;
   }
 </style>
 ```
-
 code block with class use
 
-``` html
+```html
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
   .red-text {
@@ -187,8 +163,7 @@ code block with class use
 CSS borders have properties like style, color and width
 
 For example, if we wanted to create a red, 5 pixel border around an HTML element, we could use this class:
-
-``` css
+```css
 <style>
   .thin-red-border {
     border-color: red;
@@ -197,26 +172,37 @@ For example, if we wanted to create a red, 5 pixel border around an HTML element
   }
 </style>
 ```
-
 To apply multiple classes
-
-``` html
+```html
 <img class="class1 class2">
 ```
-
 ### Add Rounded Corners with border-radius
 
 We can round out border corners with a CSS property called `border-radius`
 
-`css .thick-green-border {     border-color: green;     border-width: 10px;     border-style: solid;     border-radius: 10px;   }`
-
+```css
+.thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 10px;
+  }
+ ```
+ 
 ### Make Circular Images with a border-radius
 
 In addition to pixels, we can also specify the border-radius using a percentage.
 
-`css .thick-green-border {     border-color: green;     border-width: 10px;     border-style: solid;     border-radius: 50%;   }`
-
-Your image should have a border radius of **50%**, making it perfectly **circular.**
+```css
+.thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+ ```
+ 
+ Your image should have a border radius of **50%**, making it perfectly **circular.**
 
 ### Give a Background Color to a div Element
 
@@ -224,12 +210,11 @@ We can set an element's background color with the `background-color` property.
 
 For example, if you wanted an element's background color to be green, you'd put this within your style element:
 
-``` css
+```css
 .green-background {
   background-color: green;
 }
 ```
-
 ### Set the id of an Element
 
 In addition to classes, each HTML element can also have an `id` attribute.
@@ -239,14 +224,12 @@ There are several benefits to using id attributes: You can use an `id` to style 
 `id` attributes should be **unique.** Browsers won't enforce this, but it is a widely agreed upon best practice. So please don't give more than one element the same `id` attribute.
 
 Here's an example of how you give your `h2` element the `id` of `cat-photo-app`:
-
-``` css
+```css
 <h2 id="cat-photo-app">
 ```
 
 To give form element the id cat-photo-form
-
-``` css
+```css
 <form id="cat-photo-form" action="/submit-cat-photo">
     <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
     ...
@@ -256,16 +239,16 @@ To give form element the id cat-photo-form
 
 ### Use an id Attribute to Style an Element
 
--   like classes, we can style them using CSS.
+* like classes, we can style them using CSS.
 
--   `id` is not reusable and should only be applied to one element.
--   An `id` also has a **higher specificity** (importance) than a class.
+* `id` is not reusable and should only be applied to one element. 
+* An `id` also has a **higher specificity** (importance) than a class.
 
 e.g.
 
 `id` attribute of `cat-photo-element` and give it the background color of green. In your style element
 
-``` css
+```css
 #cat-photo-element {
   background-color: green;
 }
@@ -275,7 +258,7 @@ e.g.
 
 Three important properties control the space that surrounds each HTML element: `padding`, `margin`, and `border`.
 
-``` html
+```html
 <style>
   .injected-text {
     margin-bottom: -25px;
@@ -316,19 +299,29 @@ Three important properties control the space that surrounds each HTML element: `
 
 Change the padding of your blue box to match that of your red box.
 
-\`\`\`css
 
-... .red-box { background-color: crimson; color: \#fff; padding: 20px; }
+```css
 
-.blue-box { background-color: blue; color: \#fff; padding: 20px; } ...
+...
+.red-box {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+  }
 
-\`\`\`
-
-\#\#\# Adjust the Margin of an Element
-
-An element's margin controls the amount of space between an element's border and surrounding elements.
-
-``` html
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    padding: 20px;
+  }
+  ...
+  
+  ```
+  
+  ### Adjust the Margin of an Element
+  
+  An element's margin controls the amount of space between an element's border and surrounding elements.
+```html  
 <style>
   .injected-text {
     margin-bottom: -25px;
@@ -373,9 +366,9 @@ An element's margin controls the amount of space between an element's border and
 
 An element's margin controls the amount of space between an element's border and surrounding elements.
 
-negative element margin --&gt; the element will grow larger
+negative element margin --> the element will grow larger
 
-``` html
+```html
 <style>
   .injected-text {
     margin-bottom: -25px;
@@ -413,22 +406,23 @@ negative element margin --&gt; the element will grow larger
   <h5 class="box red-box">padding</h5>
   <h5 class="box blue-box">padding</h5>
 </div>
+
 ```
 
 ### Add Different Padding to Each Side of an Element
 
-adjust properties:
-
-``` css
+adjust properties: 
+```css
 padding-top 
 padding-right 
 padding-bottom
 padding-left
 ```
 
-Give the blue box a padding of 40px on its top and left side, but only 20px on its bottom and right side
+Give the blue box a padding of 40px on its top and left side, 
+ but only 20px on its bottom and right side
 
-``` css
+```css
 ...
 
  .blue-box {
@@ -440,21 +434,20 @@ Give the blue box a padding of 40px on its top and left side, but only 20px on i
     padding-right: 20px;
   }
 ```
-
 ### Add Different Margins to Each Side of an Element
 
-control the margin, adjust properties:
-
-``` css
+control the margin, adjust properties: 
+```css
 margin-top
 margin-right
 margin-bottom
 margin-left
 ```
 
-Give the blue box a margin of 40px on its top and left side, but only 20px on its bottom and right side.
+Give the blue box a margin of 40px on its top and left side, 
+but only 20px on its bottom and right side.
 
-``` css
+```css
  .blue-box {
     background-color: blue;
     color: #fff;
@@ -467,33 +460,35 @@ Give the blue box a margin of 40px on its top and left side, but only 20px on it
 
 ### Clockwise Notation to Specify the Padding of an Element
 
-``` css
+```css
 padding: 10px 20px 10px 20px;
 ```
-
-These four values work like a clock: top, right, bottom, left, and will produce the exact same result as using the side-specific padding instructions.
+These four values work like a clock: top, right, bottom, left, 
+and will produce the exact same result as using 
+the side-specific padding instructions.
 
 ### Use Clockwise Notation to Specify the Margin of an Element
 
-Instead of specifying an element's `margin-top`, `margin-right`, `margin-bottom`, and `margin-left` properties individually, we can specify them all in one line, like this:
+Instead of specifying an element's `margin-top`, `margin-right`, `margin-bottom`, 
+and `margin-left` properties individually, we can specify them all in one line, 
+like this:
 
-``` css
+```css
 margin: 10px 20px 10px 20px;
 ```
 
 ### Use Attribute Selectors to Style Elements
+ We can use the `[attr=value]` attribute selector to style 
 
-We can use the `[attr=value]` attribute selector to style
-
-``` css
+```css 
 [type="checkbox"]{
     margin-top:10px;
     margin-bottom: 15px;
 
   } 
 </style>
-```
 
+```
 ### Understand Absolute versus Relative Units
 
 Relative unit: `em`, `rem`
@@ -502,7 +497,7 @@ Relative unit: `em`, `rem`
 
 example:
 
-``` css
+```css
 
 .red-box {
     background-color: red;
@@ -512,5 +507,5 @@ example:
   }
   
 ```
-
 ### Style the HTML Body Element
+
