@@ -493,3 +493,50 @@ example:
 ```
 
 ### Style the HTML Body Element
+
+Every HTML page has a body element.
+
+We can prove that the body element exists here by giving it a background-color of black.
+
+```css
+<style>
+body{
+    background-color:black;
+}
+</style>
+```
+
+### Inherit Styles from the Body Element
+
+body element's styles:- color:green, and font-family:monospace, 
+other elements will inherit body element's styles.
+
+```html
+<style>
+  body {
+    background-color: black;
+    color: green;
+    font-family: monospace;
+  }
+
+</style>
+<h1>Hello World</h1>
+```
+
+### Prioritize One Style Over Another
+
+Gives `h1` color **pink**
+
+```html
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text{
+    color: pink;
+  }
+</style>
+<h1 class="pink-text">Hello World!</h1>
+```
