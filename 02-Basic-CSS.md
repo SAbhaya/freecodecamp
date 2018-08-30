@@ -540,3 +540,33 @@ Gives `h1` color **pink**
 </style>
 <h1 class="pink-text">Hello World!</h1>
 ```
+### Override Styles in Subsequent CSS
+
+```html
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text{
+    color: blue;    
+  }
+</style>
+<h1 class="pink-text blue-text">Hello World!</h1>
+
+```
+Applying multiple class attributes to a HTML element is done with a space between them like this:
+
+```css
+class="class1 class2"
+```
+
+Note: It doesn't matter which order the classes are listed in the HTML element.
+
+However, the order of the class declarations in the `<style>` section are what is important. The second declaration will always take precedence over the first. Because `.blue-text` is declared second, it overrides the attributes of `.pink-text`
+
+### Override Class Declarations by Styling ID Attributes
