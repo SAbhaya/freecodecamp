@@ -814,3 +814,12 @@ background: var(--penguin-skin);
 This will change the background of whatever element you are targeting to gray because that is the value of the --penguin-skin variable.
 
 ### Attach a Fallback
+
+When using your variable as a CSS property value, you can attach a fallback value that your page will revert to if for some reason it can't get your variable to work
+
+```css
+background: var(--penguin-skin, black);
+
+```
+
+### Cascading CSS variables
