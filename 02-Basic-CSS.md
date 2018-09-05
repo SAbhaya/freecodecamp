@@ -823,3 +823,112 @@ background: var(--penguin-skin, black);
 ```
 
 ### Cascading CSS variables
+
+When you create a variable, it becomes available for you to use inside the element in which you create it. 
+It also becomes available within any elements nested within it. This effect is known as cascading.
+
+By creating your variables in `:root`, they will be available throughout the whole web page.
+
+
+```css
+
+<style>
+  :root {
+    
+    /* add code below */
+    --penguin-belly: pink;
+    
+    /* add code above */
+  }
+  
+  body {
+    background: var(--penguin-belly, #c6faf1);
+  }
+  
+  .penguin {
+    --penguin-skin: gray;
+    --penguin-beak: orange;
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 5%;
+    width: 300px;
+    height: 300px;
+  }
+  
+...
+
+```
+
+### Change a variable for a specific area
+
+When you create your variables in :root they will set the value of that variable for the whole page.
+
+You can then over-write these variables by setting them again within a specific element.
+
+
+```css
+
+<style>
+  :root {
+    --penguin-skin: gray;
+    --penguin-belly: pink;
+    --penguin-beak: orange;
+  }
+  
+  body {
+    background: var(--penguin-belly, #c6faf1);
+  }
+  
+  .penguin {
+    
+    /* add code below */
+    --penguin-belly: white;
+    /* add code above */
+    
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 5%;
+    width: 300px;
+    height: 300px;
+  }
+
+...
+
+```
+
+### Use a media query to change a variable
+
+CSS Variables can simplify the way you use media queries.
+
+For instance, when your screen is smaller or larger than your media query break point, you can change the value of a variable, and it will apply its style wherever it is used.
+
+```css
+
+<style>
+  :root {
+    --penguin-size: 300px;
+    --penguin-skin: gray;
+    --penguin-belly: white;
+    --penguin-beak: orange;
+  }
+  
+  @media (max-width: 350px) {
+    :root {
+      
+      /* add code below */
+      --penguin-size: 200px;
+      --penguin-skin: black;
+      /* add code above */
+      
+    }
+  }
+...
+
+```
+
+Full example [pengu2](pengu2.html), change the size and see the colour change.
+
+
+
