@@ -295,15 +295,21 @@ Three important properties control the space that surrounds each HTML element: `
 
 Change the padding of your blue box to match that of your red box.
 
-\`\`\`css
+```css
 
-... .red-box { background-color: crimson; color: \#fff; padding: 20px; }
+...
+  .red-box {  background-color: crimson;
+              color: #fff;
+              padding: 20px; }
 
-.blue-box { background-color: blue; color: \#fff; padding: 20px; } ...
+  .blue-box { background-color: blue;
+              color: #fff;
+              padding: 20px; } 
+...
 
-\`\`\`
+```
 
-\#\#\# Adjust the Margin of an Element
+### Adjust the Margin of an Element
 
 An element's margin controls the amount of space between an element's border and surrounding elements.
 
@@ -559,7 +565,8 @@ Gives `h1` color **pink**
 <h1 class="pink-text blue-text">Hello World!</h1>
 
 ```
-Applying multiple class attributes to a HTML element is done with a space between them like this:
+Applying multiple class attributes to a HTML element is done with a space 
+between them like this:
 
 ```css
 class="class1 class2"
@@ -567,6 +574,243 @@ class="class1 class2"
 
 Note: It doesn't matter which order the classes are listed in the HTML element.
 
-However, the order of the class declarations in the `<style>` section are what is important. The second declaration will always take precedence over the first. Because `.blue-text` is declared second, it overrides the attributes of `.pink-text`
+However, the order of the class declarations in the `<style>` section 
+are what is important. The second declaration will always take precedence over the first. 
+Because `.blue-text` is declared second, it overrides the attributes of `.pink-text`
 
 ### Override Class Declarations by Styling ID Attributes
+
+Override `pink-text` and `blue-text` classes, 
+and make your `h1` element orange, by giving the `h1` element an `id` and 
+then styling that `id`.
+
+```html
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+  #orange-text{
+    color:orange;
+  }
+</style>
+<h1 id="orange-text" class="pink-text blue-text">Hello World!</h1>
+
+```
+
+### Override Class Declarations with Inline Styles
+
+Use an `inline style` to try to make our `h1` element white. Remember, in line styles look like this:
+
+```html
+<h1 style="color: green;">
+```
+
+code
+
+```html
+<style>
+  body {
+    background-color: black; 
+    font-family: monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 style="color: white;" id="orange-text" class="pink-text blue-text">Hello World!</h1>
+
+```
+
+### Override All Other Styles by using Important
+
+Use keyword `!important` to override all other styles.
+
+
+```html
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink !important;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 id="orange-text" class="pink-text blue-text" style="color: white">Hello World!</h1>
+
+```
+
+### Use Hex Code for Specific Colors
+
+In CSS, we can use 6 hexadecimal digits to represent colors, 
+two each for the red (R), green (G), and blue (B) components.
+
+e.g
+
+```css
+body {
+  color: #000000;
+}
+```
+
+### Use Hex Code to Mix Colors
+
+
+```html
+
+<style>
+  .red-text {
+    color: #FF0000;
+  }
+  .green-text {
+    color: #00FF00;
+  }
+  .dodger-blue-text {
+    color: #1E90FF;
+  }
+  .orange-text {
+    color: #FFA500;
+  }
+</style>
+
+<h1 class="red-text">I am red!</h1>
+
+<h1 class="green-text">I am green!</h1>
+
+<h1 class="dodger-blue-text">I am dodger blue!</h1>
+
+<h1 class="orange-text">I am orange!</h1>
+
+```
+
+### Use Abbreviated Hex Code
+
+Example:
+
+Red's hex code #FF0000 can be shortened to #F00. 
+This shortened form gives one digit for red, one digit for green, and one digit for blue.
+
+```html
+<style>
+  .red-text {
+    color: #F00;
+  }
+  .fuchsia-text {
+    color: #F0F;
+  }
+  .cyan-text {
+    color: #0FF;
+  }
+  .green-text {
+    color: #0F0;
+  }
+</style>
+
+<h1 class="red-text">I am red!</h1>
+
+<h1 class="fuchsia-text">I am fuchsia!</h1>
+
+<h1 class="cyan-text">I am cyan!</h1>
+
+<h1 class="green-text">I am green!</h1>
+```
+
+### Use RGB values to Color Elements
+
+Another way you can represent colors in CSS is by using `RGB` values.
+
+The `RGB` value for black looks like this:
+```
+rgb(0, 0, 0)
+```
+The `RGB` value for white looks like this:
+```
+rgb(255, 255, 255)
+```
+Instead of using six hexadecimal digits like you do `with hex code, 
+with `RGB` you specify the brightness of each color with a number between 0 and 255.
+
+```css
+<style>
+  body {
+    background-color: rgb(0,0,0);
+  }
+</style>
+```
+
+### Use RGB to Mix Colors
+
+```html
+<style>
+  .red-text {
+    color: rgb(255, 0, 0);
+  }
+  .orchid-text {
+    color: rgb(218, 112, 214);
+  }
+  .sienna-text {
+    color: rgb(160, 82, 45);
+  }
+  .blue-text {
+    color: rgb(0, 0, 255);
+  }
+</style>
+
+<h1 class="red-text">I am red!</h1>
+
+<h1 class="orchid-text">I am orchid!</h1>
+
+<h1 class="sienna-text">I am sienna!</h1>
+
+<h1 class="blue-text">I am blue!</h1>
+```
+
+### Use CSS Variables to change several elements at once
+
+CSS Variables are a powerful way to change many CSS style properties at once by changing only one value.
+
+[pengu](pengu.html)
+
+### Create a custom CSS Variable
+
+To create a CSS Variable, you just need to give it a name with two dashes in front of it and assign it a value like this:
+
+```css
+--penguin-skin: gray;
+```
+This will create a variable named `--penguin-skin` and assign it the value of gray.
+
+### Use a custom CSS Variable
+
+After you create your variable, you can assign its value to other CSS properties by referencing the name you gave it.
+
+```css
+background: var(--penguin-skin);
+```
+
+This will change the background of whatever element you are targeting to gray because that is the value of the --penguin-skin variable.
+
+### Attach a Fallback
