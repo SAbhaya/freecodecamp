@@ -116,6 +116,3 @@ In HTML, hr is a self-closing tag, and therefore doesn't need a separate closing
 **Output**
 
 <div><hr></div>
-
-
-
