@@ -104,3 +104,18 @@ text-decoration: line-through;
 
 <div><s>strikethrough</s></div>
 
+### Create a Horizontal Line Using the hr Element
+
+In HTML, hr is a self-closing tag, and therefore doesn't need a separate closing tag.
+
+**HTML**
+```
+<hr>
+```
+
+**Output**
+
+<div><hr></div>
+
+
+
