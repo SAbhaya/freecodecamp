@@ -103,4 +103,3 @@ text-decoration: line-through;
 **Output**
 
 <div><s>strikethrough</s></div>
-
