@@ -101,5 +101,6 @@ To strikethrough text, which is when a horizontal line cuts across the character
 text-decoration: line-through;
 ```
 **Output**
+
 <div><s>strikethrough</s></div>
 
