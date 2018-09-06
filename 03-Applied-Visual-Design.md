@@ -62,3 +62,44 @@ Example:
 <p>Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at <strong>Stanford University</strong>.</p>
 
 ```
+### Use the u Tag to Underline Text
+
+To underline text, you can use the `u` tag. This is often used to signify that a section of text is important, or something to remember. With the `u` tag, the browser applies the CSS of `text-decoration: underline;` to the element.
+
+> Note
+Try to avoid using the u tag when it could be confused for a link. Anchor tags also have a default underlined formatting.
+
+```html
+<p>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</p>
+```
+
+### Use the em Tag to Italicize Text
+
+To emphasize text, you can use the `em` tag. This displays text as *italicized*, as the browser applies the CSS of `font-style: italic;` to the element.
+
+
+**HTML**
+```html
+<p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>
+
+```
+**Output**
+<div><p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p></div>
+
+### Use the s Tag to Strikethrough Text
+
+To strikethrough text, which is when a horizontal line cuts across the characters, you can use the `s` tag. It shows that a section of text is no longer valid. With the `s` tag, the browser applies the CSS of  to the element.
+
+
+**HTML**
+```
+<s>strikethrough</s>
+```
+
+**CSS**
+```css
+text-decoration: line-through;
+```
+**Output**
+<div><s>strikethrough</s></div>
+
