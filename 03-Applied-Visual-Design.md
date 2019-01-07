@@ -116,3 +116,17 @@ In HTML, hr is a self-closing tag, and therefore doesn't need a separate closing
 **Output**
 
 <div><hr></div>
+
+### Adjust the background-color Property of Text
+
+`background-color` to the element holding the text you want to emphasize. 
+This challenge uses rgba()
+
+```
+rgba stands for:
+  r = red
+  g = green
+  b = blue
+  a = alpha/level of opacity
+  
+```
