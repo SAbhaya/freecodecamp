@@ -130,3 +130,15 @@ rgba stands for:
   a = alpha/level of opacity
   
 ```
+
+**HTML/CSS**
+
+```css
+h4 {
+    text-align: center;
+    background-color: rgba(45, 45, 45, 0.1);
+    padding: 10px;
+  }
+```
+
+### Adjust the Size of a Header Versus a Paragraph Tag
