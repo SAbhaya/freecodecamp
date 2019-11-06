@@ -143,3 +143,26 @@ h4 {
 
 ### Adjust the Size of a Header Versus a Paragraph Tag
 
+Your code should add a font-size property to the h4 element set to 27 pixels.
+
+
+```css
+h4 {
+    text-align: center;
+    background-color: rgba(45, 45, 45, 0.1);
+    padding: 10px;
+    font-size: 27px
+
+  }
+
+```
+
+### Add a box-shadow to a Card-like Element
+
+Your code should add a box-shadow property for the thumbnail id.
+You should use the given CSS for the box-shadow value.
+
+Here's an example of the CSS to create multiple shadows with some blur, at mostly-transparent black colors:
+
+> `box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);`
+
