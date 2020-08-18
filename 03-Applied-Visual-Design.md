@@ -166,3 +166,23 @@ Here's an example of the CSS to create multiple shadows with some blur, at mostl
 
 > `box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);`
 
+
+```css
+
+}
+  #thumbnail {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+</style>
+
+```
+
+**HTML**
+```
+<div class="fullCard" id="thumbnail">
+  <div class="cardContent">
+    <div class="cardText">
+      <h4>Alphabet</h4>
+```
+
+
