@@ -185,4 +185,20 @@ Here's an example of the CSS to create multiple shadows with some blur, at mostl
       <h4>Alphabet</h4>
 ```
 
+### Decrease the Opacity of an Element
+
+The opacity property in CSS is used to adjust the opacity, or conversely, the transparency for an item.
+
+```css
+
+.links {
+    text-align: left;
+    color: black;
+    opacity: 0.7;
+
+  }
+```
+
+### Use the text-transform Property to Make Text Uppercase
+
 
