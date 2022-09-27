@@ -1,6 +1,6 @@
 # freecodecamp
 FreeCodeCamp notes
-Notes parepred while learning.
+Notes prepared while learning.
 
 Content is from freecodecamp
 
